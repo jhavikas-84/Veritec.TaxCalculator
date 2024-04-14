@@ -3,31 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34804.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Veritec.TaxCalculator.Core", "Veritec.TaxCalulator.Core\Veritec.TaxCalculator.Core.csproj", "{97827468-1762-436E-888D-130E13DD6580}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Veritec.TaxCalculator.Australia", "Veritec.TaxCalulator.Australia\Veritec.TaxCalculator.Australia.csproj", "{A7C343C1-E410-4CF5-8D6B-A564934158EE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritec.TaxCalculator.Australia.Console", "Veritec.TaxCalculator.Australia.Console\Veritec.TaxCalculator.Australia.Console.csproj", "{E86B4E95-4F5C-4822-9E26-EC25CB17092D}"
-EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{97827468-1762-436E-888D-130E13DD6580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97827468-1762-436E-888D-130E13DD6580}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97827468-1762-436E-888D-130E13DD6580}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97827468-1762-436E-888D-130E13DD6580}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A7C343C1-E410-4CF5-8D6B-A564934158EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7C343C1-E410-4CF5-8D6B-A564934158EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7C343C1-E410-4CF5-8D6B-A564934158EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7C343C1-E410-4CF5-8D6B-A564934158EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E86B4E95-4F5C-4822-9E26-EC25CB17092D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E86B4E95-4F5C-4822-9E26-EC25CB17092D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E86B4E95-4F5C-4822-9E26-EC25CB17092D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E86B4E95-4F5C-4822-9E26-EC25CB17092D}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
