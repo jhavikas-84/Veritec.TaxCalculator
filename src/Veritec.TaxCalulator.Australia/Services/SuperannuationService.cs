@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Options;
-using Veritec.TaxCalculator.Australia.Exceptions;
+﻿using Veritec.TaxCalculator.Australia.Exceptions;
 using Veritec.TaxCalculator.Australia.Options;
 using Veritec.TaxCalculator.Core.Services;
 
