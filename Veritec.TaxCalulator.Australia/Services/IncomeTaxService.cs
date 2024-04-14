@@ -6,7 +6,7 @@ using Veritec.TaxCalculator.Core.Services;
 
 namespace Veritec.TaxCalculator.Australia.Services
 {
-    public class IncomeTaxService(double annualTaxableIncome, IOptions<SuperAnnuationOptions> superAnnuationOptions) : TaxDeductionServiceBase
+    public class IncomeTaxService(double annualTaxableIncome, SuperAnnuationOptions superAnnuation) : TaxDeductionServiceBase
     {
         public double AnnualTaxableIncome
         {
@@ -14,14 +14,14 @@ namespace Veritec.TaxCalculator.Australia.Services
             {
                 try
                 {
-                    var unroundedTaxableIncome = annualTaxableIncome / (1 + 9.5 * 0.01D);
+                    var unroundedTaxableIncome = annualTaxableIncome / (1 + superAnnuation.SuperContributionRate * 0.01D);
                     return unroundedTaxableIncome.RoundToDollarAndCents(MidpointRounding.ToNegativeInfinity);
                 }
                 catch (Exception ex)
                 {
                     throw new IncomeTaxException(ex.Message, ex.InnerException);
                 }
-               
+
             }
         }
 

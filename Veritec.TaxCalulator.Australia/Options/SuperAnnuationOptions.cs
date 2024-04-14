@@ -1,8 +1,8 @@
 ﻿
 namespace Veritec.TaxCalculator.Australia.Options
 {
-    public record SuperAnnuationOptions
-        (
-            double SuperContributionRate
-        );
+    public class SuperAnnuationOptions()
+    {
+        public double SuperContributionRate { get; set; }
+    }
 }

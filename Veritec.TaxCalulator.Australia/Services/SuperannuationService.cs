@@ -5,7 +5,7 @@ using Veritec.TaxCalculator.Core.Services;
 
 namespace Veritec.TaxCalculator.Australia.Services
 {
-    public class SuperannuationService(IOptions<SuperAnnuationOptions> options) : TaxDeductionServiceBase
+    public class SuperannuationService(SuperAnnuationOptions superAnnuation) : TaxDeductionServiceBase
     {
         public override double CalculateDeduction(double annualTaxableIncome)
         {
@@ -14,7 +14,7 @@ namespace Veritec.TaxCalculator.Australia.Services
 
             try
             {
-                var taxableIncome = RoundedAmountWithCents(annualTaxableIncome / (1 + 9.5 * 0.01D));
+                var taxableIncome = RoundedAmountWithCents(annualTaxableIncome / (1 + superAnnuation.SuperContributionRate * 0.01D));
                 var unroundedSuperannuation = annualTaxableIncome - taxableIncome;
                 return RoundedAmountWithCents(unroundedSuperannuation);
             }

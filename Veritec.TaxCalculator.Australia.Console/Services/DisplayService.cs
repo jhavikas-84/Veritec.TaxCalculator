@@ -1,5 +1,5 @@
 ﻿using Veritec.TaxCalculator.Australia.Console.Contracts;
-using Veritec.TaxCalculator.Australia.Console.DTO;
+using Veritec.TaxCalculator.Australia.DTO;
 using Veritec.TaxCalculator.Core.Extensions;
 
 namespace Veritec.TaxCalculator.Australia.Console.Services

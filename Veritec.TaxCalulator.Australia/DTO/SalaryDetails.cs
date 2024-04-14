@@ -1,5 +1,5 @@
 ﻿
-namespace Veritec.TaxCalculator.Australia.Console.DTO
+namespace Veritec.TaxCalculator.Australia.DTO
 {
     public record SalaryDetails
     (

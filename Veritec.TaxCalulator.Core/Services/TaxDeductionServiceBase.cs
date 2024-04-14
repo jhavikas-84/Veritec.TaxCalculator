@@ -29,7 +29,7 @@ namespace Veritec.TaxCalculator.Core.Services
             ArgumentException.ThrowIfNullOrEmpty(nameof(amount));
             ArgumentOutOfRangeException.ThrowIfLessThan(amount, 0);
 
-            return amount.RoundToDollarAndCents(MidpointRounding.ToNegativeInfinity);
+            return amount.RoundToDollarAndCents(MidpointRounding.ToPositiveInfinity);
         }
     }
 }
