@@ -19,7 +19,7 @@ This is a basic Tax Calculator app developed using .Net Core 8, to install this 
 * Here the services [`BudgetRepairLevyService`, `IncomeTaxService`, `MedicareLevyService` and `SuperannuationService` have been inherited from the `TaxDeductionServiceBase.cs` class.
 * `AustralianTaxCalculatorService` is an encapsulated service, it takes the input amount and frequency and returns a DTO object of `SalaryDetails` that hides the complexity from the client project **Veritec.TaxCalculator.Australia.Console**.
 
-## Veritec.TaxCalculator.Australia.Console
+### Veritec.TaxCalculator.Australia.Console
 * This is the client application that has the **DI Patterns (SOLID Principles)** and validations to user input.
 * The services `InputReaderService` and `DisplayService` are used for input and output to the console.
 
